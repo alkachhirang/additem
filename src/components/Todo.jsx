@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Todoitem from './Todoitem';
+import { Container } from 'react-bootstrap';
 
 const Todo = () => {
     const [todos, setTodos] = useState([]);
@@ -43,7 +44,7 @@ const Todo = () => {
     
     return (
         <div className='mt-5'>
-            <div className='container mx-auto'>
+        <Container className='mx-auto'>
                 <h1 className='mb-5 text-center'>Add-items-list</h1>
                 <div className='d-flex gap-3 flex-column mb-[12px]'>
                     <input
@@ -72,7 +73,7 @@ const Todo = () => {
                         </li>
                     ))}
                 </ul>
-            </div>
+            </Container>
         </div>
     );
 };
